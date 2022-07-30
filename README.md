@@ -6,10 +6,11 @@ Every day 1 to 5 clients come to the hotel. Every client asks for a room with sp
 When clients leave the rooms the rooms are free for the next clients. The rooms are free before new clients come to the hotel.
 classes:
 
-Client
+*Client*
 
 This class represents a client. A client has the features:
 - id
 - all the details about their reservation : number of beds, type of room, floor (not necessary), days of stay.
 - When a client is created their id is automatically created. If they are the first the id is 1, if they are the second the id is 2 etc.
-- 
+- It has a method called decideBooking() which "decides" (randomly) the details of the client's reservation. The parameters of this method are the number of floors and the number of the different types of rooms.
+- It offers methods that can access the reservation.
