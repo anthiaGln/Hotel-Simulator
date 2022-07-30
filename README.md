@@ -14,3 +14,12 @@ This class represents a client. A client has the features:
 - When a client is created their id is automatically created. If they are the first the id is 1, if they are the second the id is 2 etc.
 - It has a method called decideBooking() which "decides" (randomly) the details of the client's reservation. The parameters of this method are the number of floors and the number of the different types of rooms.
 - It offers methods that can access the reservation.
+
+*Room*
+
+This class represents a room. It includes:
+- room number (*number*)
+- number of beds (*numBeds*)
+- type of room (integer, 1 for std and 2 for sup) (*type*)
+- the client who (probably) stays in the room (*client*)
+- client's (if they stay in the room) check out date (*checkOutDate*)
