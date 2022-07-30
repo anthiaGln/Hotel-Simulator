@@ -4,7 +4,8 @@ Every day 1 to 5 clients. Every client asks for a room with specific features - 
 When clients leave the rooms the rooms are free for the next clients. The rooms are free before new clients come to the hotel.
 classes:
 - Client
+`
 This class represents a client. A client has the features:
 * id
 * all the details about their reservation : number of beds, type of room, floor (not necessary), days of stay.
-When a client is created
+When a client is created their id is automatically created 
