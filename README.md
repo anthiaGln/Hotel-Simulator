@@ -54,4 +54,9 @@ This class has the fields:
 - a single dimension array of floors (floors)
 
 - When the hotel is created its name and the number of floors are created too.
-- The method setFloorRooms() assigns to a specific floor
+- The method setFloorRooms() assigns to a specific floor -the floor's number is given- the number of its rooms.
+- In order to handle the floors there is a method (*getFloor()*) that returns a reference of the floor that its number is given (note: not the pointer of the array but the actual floor number). With this reference, method main() will get the type of the rooms of each floor.
+- It has two searchRoom() methods that will be called to search for rooms if the client wants a specific floor or not.
+- It has the method bookRoom() which books a specific room and the data is the room, the client that is going to stay and the check out date. The start of stay begins when the method is called so the rooms is reserved imediately for the client.
+- It has the method emptyRooms() that searches all the floors and sets free the rooms in which the stay has ended on a specific day (the day is a parameter)
+- It has a method serviceClient() which handes the required reservation of a client.
