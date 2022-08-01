@@ -29,3 +29,14 @@ This class represents a room. It includes:
 - it has methods to access the class' fields. (set/get functions)
 - it has methods in which check in or check out happens and it displays a message based on that (*checkIn()*) (*checkOut()*).
 - it has a method that checks whether a room is available or not (*isEmpty()*) 
+
+*Floor*
+
+It represents a floor at the hotel.
+This class has the fields:
+- floor number (*number*)
+- a single dimension array of rooms (*rooms*)
+
+- When a floor is created the floor number and the number of rooms are also created.
+- In order to define the details of the rooms the class has two methods (*setRoomData()*):
+- 
