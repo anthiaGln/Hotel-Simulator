@@ -61,7 +61,7 @@ This class has the fields:
 - It has the method emptyRooms() that searches all the floors and sets free the rooms in which the stay has ended on a specific day (the day is a parameter)
 - It has a method serviceClient() which handes the required reservation of a client.
 
-*Main*
+*Main (Project1)*
 
 This class actualizes the simulation in the main() method.
 - It creates the hotel and defines the floors and the rooms (*createHotel()*). At least one room has to have every combination about the number of beds (2/3), the room type (std/sup).
