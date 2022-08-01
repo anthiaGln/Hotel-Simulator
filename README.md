@@ -64,4 +64,11 @@ This class has the fields:
 *Main*
 
 This class actualizes the simulation in the main() method.
-- It creates the hotel and defines the floors and the rooms (*createHotel()*). At least one room 
+- It creates the hotel and defines the floors and the rooms (*createHotel()*). At least one room has to have every combination about the number of beds (2/3), the room type (std/sup).
+- There is a loop to simulate the days (*(runSimulation()*). So, every day:
+
+- Rooms get empty because of check out.
+- Α random number of clients is created and they ask for rooms with random features. That includes clients asking for a spcific floor or not.
+
+This loop is automatic and it runs 30 times (30 days).
+The main class includes static variables which are the number of the floors (*NUM_FLOORS*) and the number of the rooms of each floor (it is the same for all the floors) (*NUM_FLOOR_ROOMS*)
