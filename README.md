@@ -26,3 +26,6 @@ This class represents a room. It includes:
 - client's (if they stay in the room) check out date (*checkOutDate*)
 
 - when a room is created the room number, the number of beds and the type of the room are created. In the start it is empty (no clients). 
+- it has methods to access the class' fields. (set/get functions)
+- it has methods in which check in or check out happens and it displays a message based on that (*checkIn()*) (*checkOut()*).
+- it has a method that checks whether a room is available or not (*isEmpty()*) 
