@@ -33,10 +33,25 @@ This class represents a room. It includes:
 *Floor*
 
 It represents a floor at the hotel.
+
 This class has the fields:
 - floor number (*number*)
 - a single dimension array of rooms (*rooms*)
 
 - When a floor is created the floor number and the number of rooms are also created.
 - In order to define the details of the rooms the class has two methods (*setRoomData()*):
-- 
+- The one takes the room number (e.g. 207), number of beds and room type and all these values are assigned to the element of the array as a room with these features.
+- The othertakes a range of number of rooms (e.g. 207, 212), number of beds and room type and assigns to the right elements of the array the new rooms with these features.
+- The class has a method (*searchRoom()*) which searches for a room from the specific floor with specific features (number of beds and type. If the room is found (or not) the method returns a reference to it.
+- The class has a method (*emptyRooms()*) which checks all the rooms and sets free the ones that the stay has ended.
+- The class has a method  (*roomIndexFromNumber()*) which takes a room number (e.g. 302) and returns the position of the room at the array (e.g. 1 for room 302). The method returns value -1 if the number that is given is not valid for the floor.
+
+*Hotel*
+- This class represents the hotel's simulation. It's the base class which handles the hotel.
+
+This class has the fields:
+- hotel's name (name)
+- a single dimension array of floors (floors)
+
+- When the hotel is created its name and the number of floors are created too.
+- The method setFloorRooms() assigns to a specific floor
