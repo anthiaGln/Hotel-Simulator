@@ -26,11 +26,11 @@ public class Client {
         
         
         if(x==0){ 
-            System.out.println("O pelaths me id " + getClient() + " den dialekse sygkekrimeno orofo");
+            System.out.println("The customer with id " + getClient() + " didn't choose a specific floor.");
         }
         else if(x==1){ 
             numFloor=r.nextInt(NUM_FLOORS)+1;
-            System.out.println("O pelaths me id " + getClient() + " thelei na meinei ston " + numFloor + " orofo");
+            System.out.println("The customer with id " + getClient() + " wants to stay on floor " + numFloor);
         }
         
         return x;

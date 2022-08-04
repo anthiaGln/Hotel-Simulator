@@ -38,7 +38,7 @@ public class Room {
     public void checkIn(int meres,int pelaths,int i){
         checkOutDate=meres+i;
         client=pelaths;
-        System.out.println("O pelaths me id " + getClient() + " ekleise to dwmatio " + getNumber() +" gia " + meres + " meres kai tha fygei th mera " + getCheckOutDate());
+        System.out.println("The customer with id " + getClient() + " made a reservation for the room " + getNumber() +" for " + meres + " days and the will leave on day " + getCheckOutDate());
     }
     
     public void checkOut(){

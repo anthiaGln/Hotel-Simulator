@@ -20,8 +20,8 @@ public class Hotel {
     }
     
     public void setFloorRooms(int i){
-        floors[i].setArithmosDwmatiwnOrofou(NUM_FLOOR_ROOMS);
-        System.out.println("O orofos " + (i+1) + " exei " + floors[i].getArithmosDwmatiwnOrofou() + " dwmatia" );
+        floors[i].setNumOfRoomsInFloor(NUM_FLOOR_ROOMS);
+        System.out.println("Floor " + (i+1) + " has " + floors[i].getNumOfRoomsInFloor() + " rooms" );
     }
     
     public void createFloors(int i){
@@ -39,7 +39,7 @@ public class Hotel {
         numFloor=numFloor-1;
         r=floors[numFloor].searchRoom(numBeds,type,client,meres, i);
         if(r==null){
-           System.out.println("To dwmatio den einai eleythero");
+           System.out.println("The room is not empty.");
 
             return null;
         }
@@ -60,7 +60,7 @@ public class Hotel {
                 return r;
             }
         }
-       System.out.println("To dwmatio den einai eleythero");
+       System.out.println("The room is not empty.");
         return null;
     }
     
@@ -84,11 +84,11 @@ public class Hotel {
 
             
             if(r==null){
-                System.out.println("Den yparxei to dwmatio poy zhthsate !");
+                System.out.println("The room you requested isn't available.");
                 return 0;
             }
             else{
-                System.out.println("Yparxei to dwmatio poy zhthsate");
+                System.out.println("The room you requested is available.");
                 bookRoom(r,client,meres,i);
                 return 1;
             }
@@ -99,11 +99,11 @@ public class Hotel {
             r=searchRoom(numBeds,type,numFloor,client,meres,i);
 
             if(r==null){
-                System.out.println("Den yparxei to dwmatio poy zhthsate !");
+                System.out.println("The room you requested isn't available.");
                 return 0;
             }
             else{
-                System.out.println("Yparxei to dwmatio poy zhthsate");
+                System.out.println("The room you requested is available.");
                 bookRoom(r,client,meres,i);
             }
         }

@@ -6,15 +6,15 @@ import static project1.Project1.NUM_FLOOR_ROOMS;
 
 
 public class Floor {
-    private int arithmosDwmatiwnOrofou;
+    private int numOfRoomsInFloor;
     private int number;
     private Room[] rooms=new Room[NUM_FLOOR_ROOMS]; 
     
     Random r=new Random();  
     
-    public Floor(int number,int arithmosDwmatiwnOrofou){
+    public Floor(int number,int numOfRoomsInFloor){
         this.number=number+1;
-        this.arithmosDwmatiwnOrofou=arithmosDwmatiwnOrofou;
+        this.numOfRoomsInFloor=numOfRoomsInFloor;
     }
     
     public void setRoomData(int number,int numBeds,int type){
@@ -46,7 +46,7 @@ public class Floor {
 
             if((rooms[j].getNumBeds()==numBeds) && (rooms[j].getType()==type) && (rooms[j].isEmpty())){
                 
-                    System.out.println("To dwmatio einai eleythero");
+                    System.out.println("Room is empty.");
                     return rooms[j]; 
             }
             else{
@@ -65,7 +65,7 @@ public class Floor {
             if((rooms[j]!=null) && (rooms[j].getCheckOutDate()==i)){
     
                 rooms[j].checkOut();
-                System.out.println("Eleutherwthhke to dwmatio " + rooms[j].getNumber());
+                System.out.println("Checkout of room " + rooms[j].getNumber());
             }
         }
     }
@@ -80,8 +80,8 @@ public class Floor {
         }
     }
     
-    public int getArithmosDwmatiwnOrofou(){
-        return arithmosDwmatiwnOrofou;
+    public int getNumOfRoomsInFloor(){
+        return numOfRoomsInFloor;
     }
    
     public int setTuxaiaKrevatia(){
@@ -94,7 +94,7 @@ public class Floor {
         return type;
     }
     
-    public void setArithmosDwmatiwnOrofou(int arithmosDwmatiwnOrofou){
-        this.arithmosDwmatiwnOrofou=arithmosDwmatiwnOrofou;
+    public void setNumOfRoomsInFloor(int numOfRoomsInFloor){
+        this.numOfRoomsInFloor=numOfRoomsInFloor;
     }
 }
