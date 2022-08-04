@@ -62,11 +62,11 @@ public class Project1 {
 
         Random rnd = new Random();
         System.out.println();
-        System.out.println("Kalwshrthate sto ksenodoxeio " + hotel.getName());
+        System.out.println("Welcome to hotel " + hotel.getName());
 
         for (int i = 1; i <= DAYS; i++) {
             System.out.println();
-            System.out.println("---------HMERA " + i + "----------");
+            System.out.println("---------DAY " + i + "----------");
             if (i > 1) {
                 hotel.emptyRooms(i);
             }
