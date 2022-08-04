@@ -71,30 +71,30 @@ public class Project1 {
                 hotel.emptyRooms(i);
             }
             int numClients = rnd.nextInt(5) + 1;
-            System.out.println("Hrthan " + numClients + " pelates shmera");
+            System.out.println(numClients + " customers came today");
             for (int j = 0; j < numClients; j++) {
-                System.out.println("---------PELATHS " + (j + 1) + "----------");
+                System.out.println("---------CUSTOMER " + (j + 1) + "----------");
                 Client c = new Client();
                 int thelworofo = c.decideBooking(NUM_FLOORS, 2);
-                System.out.print("Zhteitai dwmatio me " + c.getNumBeds() + " krevatia , ");
+                System.out.print("A room with " + c.getNumBeds() + " beds is requested, ");
                 if (c.getRoomType() == 1) {
-                    System.out.print("aplo , ");
+                    System.out.print("standard , ");
                 } else if (c.getRoomType() == 2) {
-                    System.out.print("megalo , ");
+                    System.out.print("superior , ");
                 }
 
-                System.out.println("gia " + c.getNumDays() + " hmeres");
+                System.out.println("for " + c.getNumDays() + " days");
 
                 if (thelworofo == 0) {
 
                     if(hotel.serviceClient(c.getNumBeds(), c.getRoomType(), -1, c.getClient(), c.getNumDays(), thelworofo, i)==0){
-                        System.out.println("O pelaths me id " + c.getClient() + " anaxwrhse");
+                        System.out.println("The customer with id " + c.getClient() + " left.");
                     }
 
                 } else if (thelworofo == 1) {
 
                     if(hotel.serviceClient(c.getNumBeds(), c.getRoomType(), c.getNumFloor(), c.getClient(), c.getNumDays(), thelworofo, i)==0)
-                    System.out.println("O pelaths me id " + c.getClient() + " anaxwrhse");
+                    System.out.println("The customer with id " + c.getClient() + " left.");
                 }
             }
         }
